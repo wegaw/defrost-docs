@@ -22,3 +22,5 @@ Your users are planning outdoor activities ahead of time, but snow coverage chan
 
 Most people enjoy the outdoors during the peak summer and winter seasons; however, though unpredictable and variable, autumn and spring can offer ideal snow and snow-free conditions. Use DeFROST API to adapt yourself daily to your region of interest's status, deploying dynamic marketing campaigns when outdoor conditions are ideal. Keep growing even off-season!
 
+## 
+
