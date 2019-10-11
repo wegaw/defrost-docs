@@ -20,7 +20,7 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### Improvements
 
-* ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. Read the Coming soon section for our roadmap in reaching higher resolution for regions with persistent, long cloudy periods.
+* ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. Read the [Coming soon section](changelog.md#coming-soon) for our roadmap in reaching higher resolution for regions with persistent, long cloudy periods.
 
 ## v1.0 - 25 Sept 2019
 
