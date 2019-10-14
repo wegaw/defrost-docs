@@ -18,6 +18,11 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 * ⚛ **\[API\] New API Endpoint Snow cover over line**: a new endpoint called[ Snow cover over line](https://defrost.ch/api-docs#operation/Snow%20cover%20over%20line) allows you passing a [GeoJSON formatted LineString geometry](https://en.wikipedia.org/wiki/GeoJSON#Geometries) to retrieve the snow cover status for each of the line's point. In addition, this endpoint will return the percentage of the terrain under such line that is covered under snow - by resampling the line to 20 meters. 
 
+### Changes
+
+* ⚛ **\[API\] Snow depth is now returned as part of Snow cover at point and over-line endpoints**. A single, interpolated value is returned for each point. For now, we are able to provide snow depth values for locations in the Swiss Alps. 
+* ‼ ⚛ **\[API\] Snow depth endpoint deprecated**: The _Snow depth at point_ endpoint is deprecated and will be removed in the next version. The snow depth metric is now returned at the _Snow cover at point_ and _Snow cover over line_ endpoints, please switch to using those instead. 
+
 ### Improvements
 
 * ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. Read the [Coming soon section](changelog.md#coming-soon) for our roadmap in reaching higher resolution for regions with persistent, long cloudy periods.
