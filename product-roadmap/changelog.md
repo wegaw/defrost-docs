@@ -12,6 +12,12 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 * 💻 **Snow over an area** new API endpoint
 * 🤩 **Self-service signup page** to request access to DeFROST
 
+## v1.1.1 - 16 Oct 2019
+
+### New Features
+
+* ⚛ **\[API\] The "Snow cover over a line" endpoint returns 2 new metrics**: the minimum and maximum snow depth observed across the points that compose the line you are querying snow for are now returned by the [Snow cover over line](https://defrost.ch/api-docs#operation/Snow%20cover%20over%20line) API endpoint.
+
 ## v1.1 - 11 Oct 2019
 
 ### New Features
@@ -21,7 +27,7 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 ### Changes
 
 * ⚛ **\[API\] Snow depth is now returned as part of Snow cover at point and over-line endpoints**. A single, interpolated value is returned for each point. For now, we are able to provide snow depth values for locations in the Swiss Alps. 
-* ‼ ⚛ **\[API\] Snow depth endpoint deprecated**: The _Snow depth at point_ endpoint is deprecated and will be removed in the next version. The snow depth metric is now returned at the _Snow cover at point_ and _Snow cover over line_ endpoints, please switch to using those instead. 
+* ‼ ⚛ **\[API\] Snow depth endpoint deprecated**: The _Snow depth at point_ endpoint is deprecated and will be removed in the next minor version 1.2. The snow depth metric is now returned at the _Snow cover at point_ and _Snow cover over line_ endpoints, please switch to using those instead. 
 
 ### Improvements
 
