@@ -58,8 +58,8 @@ Make sure to modify the snippets with your API tokens obtained in the step above
 {% code-tabs-item title="defrost\_test.sh" %}
 ```bash
 # URLs used in this example
-export API_URL="http://api.defrost.io/v1/snow-covers/"
-export REFRESH_URL="http://api.defrost.io/v1/token/refresh/"
+export API_URL="https://api.defrost.io/v1/snow-covers/"
+export REFRESH_URL="https://api.defrost.io/v1/token/refresh/"
 # Your DeFROST API tokens
 export JWT_ACCESS_TOKEN="<YOUR_ACCESS_TOKEN>"
 export JWT_REFRESH_TOKEN="<YOUR_REFRESH_TOKEN>"
@@ -82,8 +82,8 @@ echo "DATA RECEIVED: $DATA"
 import requests
 
 # URLs used in this example
-SAMPLE_API_URL = 'http://api.defrost.io/v1/snow-covers/'
-TOKEN_REFRESH_URL = 'http://api.defrost.io/v1/token/refresh/'
+SAMPLE_API_URL = 'https://api.defrost.io/v1/snow-covers/'
+TOKEN_REFRESH_URL = 'https://api.defrost.io/v1/token/refresh/'
 # Your DeFROST API tokens
 JWT_ACCESS_TOKEN = '<YOUR_ACCESS_TOKEN>'
 JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>'
@@ -118,7 +118,7 @@ if r.status_code == 200:
 import axios from 'axios';
 
 // URLs used in this example
-let SAMPLE_API_URL = 'http://api.defrost.io/v1/snow-covers/';
+let SAMPLE_API_URL = 'https://api.defrost.io/v1/snow-covers/';
 let TOKEN_REFRESH_URL = process.env.TOKEN_REFRESH_URL;
 // Your DeFROST API tokens
 let JWT_ACCESS_TOKEN = '<YOUR_ACCESS_TOKEN>';
@@ -196,7 +196,7 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.defrost.io/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'https://maps.defrost.io/{z}/{x}/{y}.png';
         
         var map = new ol.Map({
             target: 'map',
@@ -270,7 +270,7 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.defrost.io/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'https://maps.defrost.io/{z}/{x}/{y}.png';
         
         L.TileLayer.headers = L.TileLayer.extend({
             createTile(coords, done) {
@@ -366,7 +366,7 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.defrost.io/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'https://maps.defrost.io/{z}/{x}/{y}.png';
         mapboxgl.accessToken = '<YOUR_MAPBOX_TOKEN>';
         
         var map = new mapboxgl.Map({
@@ -416,6 +416,6 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
 You are now ready to integrate DeFROST! You can check the following additional resources:
 
 {% hint style="success" %}
-[Code Examples GitHub repository](https://github.com/wegaw/defrost-examples):  Full source code and starter project demonstrating integration of Snow Cover tiles and API in supported platforms. 
+[Code Examples GitHub repository](https://github.com/wegaw/defrost-examples):  Full source code and starter project demonstrating integration of DeFROST Maps and API in supported platforms. 
 {% endhint %}
 
