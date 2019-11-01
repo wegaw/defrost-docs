@@ -4,6 +4,8 @@ description: Daily updated snow cover map at 375 meters resolution
 
 # Global Map
 
+DeFROST operates and serves a daily snow cover map with 375 meters resolution for the entire world, excluding extreme latitudes \(i.e. the poles\) above or below the 70th parallels north and south.
+
 ### Map Characteristics
 
 The table below summarizes this map's key characteristics: 
@@ -15,6 +17,7 @@ The table below summarizes this map's key characteristics:
 | **Tile zoom levels** | 9 zoom levels |
 | **Tile size** | 256x256 pixels |
 | **Default snow color** | Purple \(\#5350b2\) |
+| **Covered area** | 70°N to 70°S |
 
 ### Map Endpoint
 

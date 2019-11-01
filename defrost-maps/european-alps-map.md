@@ -25,6 +25,7 @@ The table below summarizes this map's key characteristics:
 | **Tile zoom levels** | 13 zoom levels |
 | **Tile size** | 256x256 pixels |
 | **Default snow color** | Purple \(\#5350b2\) |
+| **Covered area** | Alpine Convention |
 
 ### Map Endpoint
 
