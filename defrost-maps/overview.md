@@ -8,7 +8,7 @@ DeFROST currently offers **two different snow cover maps**: one covering the [Eu
 
 The table below quickly summarizes both maps' main characteristics:
 
-|  | **European Alps Map** | **Global Map** |
+|  | \*\*\*\*[**European Alps Map**](european-alps-map.md) | \*\*\*\*[**Global Map**](global-map.md) |
 | :--- | :--- | :--- |
 | **Spatial resolution** | 20 meters | 375 meters |
 | **Update time** | Daily at 3AM CET | Daily at 4PM CET |
@@ -26,7 +26,7 @@ In the same way as the [DeFROST API](../defrost-api/overview.md), access to the 
 Check the [Authentication ](../introduction/authentication.md)section for important details on DeFROST's Authentication functioning, applying to both the API and Maps.
 {% endhint %}
 
-JWT is a highly secure, modern but relatively recent way of securing the access to a Tile Server, making it neccessary to write additional code in order to make it work with some web mapping libraries such as OpenLayers or Leaflet. The Mapbox library already supports JWT authentication method easily out of the box. 
+JWT is a highly secure, modern but relatively recent way of securing the access to a Tile Server, making it neccessary to write additional code in order to make it work with some web mapping libraries such as OpenLayers or Leaflet. The Mapbox library already supports JWT authentication method easily out of the box. However - **we have already made that work for you**:
 
 {% hint style="success" %}
 You can **check working code examples** on either OpenLayers, Leaflet or Mapbox in the [Development Quickstart](../introduction/defrost-api-and-map-service.md) section or the [example project](https://github.com/wegaw/defrost-examples).
