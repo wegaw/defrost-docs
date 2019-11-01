@@ -416,6 +416,6 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
 You are now ready to integrate DeFROST! You can check the following additional resources:
 
 {% hint style="success" %}
-[Code Examples GitHub repository](https://github.com/wegaw/defrost-examples):  Full source code and starter project demonstrating integration of Snow Cover tiles and API in supported platforms. 
+[Code Examples GitHub repository](https://github.com/wegaw/defrost-examples):  Full source code and starter project demonstrating integration of DeFROST Maps and API in supported platforms. 
 {% endhint %}
 
