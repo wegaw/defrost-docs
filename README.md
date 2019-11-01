@@ -10,15 +10,15 @@ You can integrate snow cover data from DeFROST in two main ways:
 
 The DeFROST Maps allow you to **display snow cover as a map** and integrates quickly with the most popular mobile & web mapping frameworks. Maps are delivered via the **Tiled Map Service** standard and allows you to customize the look and feel of the tiles on the fly. 
 
-![DeFROST European Alps Map showing snow cover in light blue color, displayed over a Mapbox base map](.gitbook/assets/image.png)
+![DeFROST Snow Cover layer displayed over a Mapbox base map](.gitbook/assets/assets_-lilbxlqv870ib7hjojr_-lmcelxri_gymglf3kfj_-lmch3eqlzcj1yxhvftm_image.png)
 
-You can read through our [quickstart](introduction/defrost-api-and-map-service.md#step-3-display-the-snow-cover-map-layer) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers.**_ Check the [DeFROST Maps section](defrost-maps/overview.md) for an in-depth introduction to the two different snow cover maps offered: the [European Alps](defrost-maps/european-alps-map.md) map or the [Global](defrost-maps/global-map.md) map.
+You can read through our [quickstart](introduction/development-quickstart.md) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers**._
 
 ### DeFROST API
 
-Do you want to power a custom, more advanced use case? [DeFROST API](https://staging.defrost.io/api-docs) lets you **query snow cover for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
+Do you want to power a custom, more advanced use case? [DeFROST API](https://defrost.io/api-docs) lets you **query snow cover for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
 
-{% api-method method="get" host="https://api.staging.defrost.io" path="/v1/snow-point/{lat}/{lng}" %}
+{% api-method method="get" host="https://api.defrost.io" path="/v1/snow-point/{lat}/{lng}" %}
 {% api-method-summary %}
 snow-point
 {% endapi-method-summary %}
@@ -62,6 +62,6 @@ In this example, DeFROST returns a snow-positive reply for the Matterhorn summit
 The DeFROST API is a **RESTful API compliant with the OpenAPI 2.0** standard, so it can be integrated easily in your application.  As such you can use it in any environment connected to the world wide web using a TCP/IP library of your choice.  The **response data format is in the JSON format**, which is widely supported by all major programming languages and frameworks. That means you can integrate the API in most platforms including all major _**web browsers**, **Android**, **iOS**, **Python, C/C++, Node.js**_. You name it. 
 
 {% hint style="info" %}
-To get started in minutes with either DeFROST Maps or API, read the [Development Quickstart](introduction/defrost-api-and-map-service.md).
+To get started in minutes with either DeFROST Maps or API, read the [Development Quickstart](introduction/development-quickstart.md).
 {% endhint %}
 

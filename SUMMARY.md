@@ -5,15 +5,15 @@
 ## Introduction
 
 * [Use Cases](introduction/use-cases.md)
-* [Development Quickstart](introduction/defrost-api-and-map-service.md)
+* [Development Quickstart](introduction/development-quickstart.md)
 
 ## DeFROST Maps
 
-* [Maps Overview](defrost-maps/overview.md)
+* [Maps Overview](defrost-maps/maps-overview.md)
 * [European Alps Map](defrost-maps/european-alps-map.md)
 * [Global Map](defrost-maps/global-map.md)
 
-## DeFROST API
+## Product Roadmap
 
-* [API Overview](defrost-api/overview.md)
+* [Changelog](product-roadmap/changelog.md)
 
