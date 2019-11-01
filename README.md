@@ -12,7 +12,7 @@ The DeFROST Maps allow you to **display snow cover as a map** and integrates qui
 
 ![DeFROST Snow Cover layer displayed over a Mapbox base map](.gitbook/assets/image.png)
 
-You can read through our [quickstart](introduction/defrost-api-and-map-service.md#step-3-display-the-snow-cover-map-layer) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers**._
+You can read through our [quickstart](introduction/defrost-api-and-map-service.md#step-3-display-the-snow-cover-map-layer) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers.**_ Check the [DeFROST Maps section](defrost-maps/overview.md) for an in-depth introduction to the snow cover maps which currently come in two flavours based on their coverage: [European Alps](defrost-maps/european-alps-map.md) or [Global](defrost-maps/global-map.md).
 
 ### DeFROST API
 
