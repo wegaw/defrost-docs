@@ -5,5 +5,9 @@
 ## Introduction
 
 * [Use Cases](introduction/use-cases.md)
-* [Development Quickstart](introduction/defrost-api-and-map-service.md)
+* [Development Quickstart](introduction/development-quickstart.md)
+
+## Product Roadmap
+
+* [Changelog](product-roadmap/changelog.md)
 

@@ -6,7 +6,7 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ## Coming soon
 
-* 🌐 **Global coverage at 375 meters resolution** - for both API and Map services on snow cover, scheduled for 30th October 2019!
+* 🌐 **Global coverage at 375 meters resolution** - for both DeFROST API and Maps on snow cover, scheduled for 30th October 2019!
 * ❄ **Alps coverage for snow depth** real-time data
 * ☁ **Improved snow detection in extremely cloudy regions** while keeping the best resolution available! 
 * 💻 **Snow over an area** new API endpoint
@@ -37,6 +37,6 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 **DeFROST 1.0 codename ALPINE20 first release!** This is basically including, with coverage for all the European Alpine region \(as per the area defined by the Alpine Convention\):
 
-* ⚛ **DeFROST API Service**: an endpoint for querying snow cover at any point in the alps. Another endpoint for querying the snow depth for any point.
-* 🗺 **DeFROST Map Service**: a TMS standard web map tile server secured by JWT tokens providing DeFROST snow cover map compatible with any major web mapping library such as OpenLayers, Leaflet or Mapbox.
+* ⚛ **DeFROST API**: an endpoint for querying snow cover at any point in the alps. Another endpoint for querying the snow depth for any point.
+* 🗺 **DeFROST Maps**: a TMS standard web map tile server secured by JWT tokens providing DeFROST snow cover map compatible with any major web mapping library such as OpenLayers, Leaflet or Mapbox.
 
