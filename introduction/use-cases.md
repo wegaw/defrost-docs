@@ -8,7 +8,7 @@ description: >-
 
 ### Safety first: detect slippery terrain
 
-Slippery terrain due to wet or icy snow provoke too many fatal and non-fatal accidents outdoors. Help your users avoid dangerous terrain. You can use DeFROST API to [query various coordinates](https://defrost.io/api-docs#operation/Snow%20cover%20at%20point) to test the presence of snow, e.g. over a hiking trail. When combined with other data such as elevation, you will be able to detect steep and snowy terrain which shall be avoided!
+Slippery terrain due to wet or icy snow provoke too many fatal and non-fatal accidents outdoors. Help your users avoid dangerous terrain. You can use DeFROST API to [query various coordinates](https://staging.defrost.io/api-docs#operation/Snow%20cover%20at%20point) to test the presence of snow, e.g. over a hiking trail. When combined with other data such as elevation, you will be able to detect steep and snowy terrain which shall be avoided!
 
 ### Find the right trail for the right activity
 
@@ -21,4 +21,6 @@ Your users are planning outdoor activities ahead of time, but snow coverage chan
 ### Tackle seasonality
 
 Most people enjoy the outdoors during the peak summer and winter seasons; however, though unpredictable and variable, autumn and spring can offer ideal snow and snow-free conditions. Use DeFROST API to adapt yourself daily to your region of interest's status, deploying dynamic marketing campaigns when outdoor conditions are ideal. Keep growing even off-season!
+
+## 
 

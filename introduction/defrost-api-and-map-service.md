@@ -1,7 +1,7 @@
 ---
 description: >-
-  Get up and running with our Snow Cover API & Map service and kick-start your
-  DeFROST integration.
+  Get up and running with our Snow Cover API & Maps and kick-start your DeFROST
+  integration.
 ---
 
 # Development Quickstart
@@ -24,7 +24,7 @@ To use DeFROST, you'll need an access token. We use this token to associate any 
 
 You will obtain two tokens:
 
-* An Access Token, allowing you to make any API or Map Service request
+* An Access Token, allowing you to make any API or Maps request
 * A Refresh Token, allowing you to obtain a new Access Token when this expires
 
 {% hint style="info" %}
@@ -158,13 +158,13 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
 
 ### Step 3: Display the snow cover map layer
 
-To test that your integration with DeFROST Map Service is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
+To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
 
 {% hint style="warning" %}
 Make sure to modify the snippets below with your API access token. The Mapbox snippet requires, in addition, your Mapbox token.
 {% endhint %}
 
-The key point to keep in mind is that our Map Service requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples below.
+The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples below.
 
 {% tabs %}
 {% tab title="OpenLayers" %}
