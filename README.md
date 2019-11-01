@@ -16,9 +16,9 @@ You can read through our [quickstart](introduction/development-quickstart.md) to
 
 ### DeFROST API
 
-Do you want to power a custom, more advanced use case? [DeFROST API](https://defrost.ch/api-docs) lets you **query snow cover for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
+Do you want to power a custom, more advanced use case? [DeFROST API](https://defrost.io/api-docs) lets you **query snow cover for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
 
-{% api-method method="get" host="https://api.defrost.ch" path="/v1/snow-point/{lat}/{lng}" %}
+{% api-method method="get" host="https://api.defrost.io" path="/v1/snow-point/{lat}/{lng}" %}
 {% api-method-summary %}
 snow-point
 {% endapi-method-summary %}

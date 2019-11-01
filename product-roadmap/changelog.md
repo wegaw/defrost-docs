@@ -16,13 +16,13 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### New Features
 
-* ⚛ **\[API\] The "Snow cover over a line" endpoint returns 2 new metrics**: the minimum and maximum snow depth observed across the points that compose the line you are querying snow for are now returned by the [Snow cover over line](https://defrost.ch/api-docs#operation/Snow%20cover%20over%20line) API endpoint.
+* ⚛ **\[API\] The "Snow cover over a line" endpoint returns 2 new metrics**: the minimum and maximum snow depth observed across the points that compose the line you are querying snow for are now returned by the [Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) API endpoint.
 
 ## v1.1 - 11 Oct 2019
 
 ### New Features
 
-* ⚛ **\[API\] New API Endpoint Snow cover over line**: a new endpoint called[ Snow cover over line](https://defrost.ch/api-docs#operation/Snow%20cover%20over%20line) allows you passing a [GeoJSON formatted LineString geometry](https://en.wikipedia.org/wiki/GeoJSON#Geometries) to retrieve the snow cover status for each of the line's point. In addition, this endpoint will return the percentage of the terrain under such line that is covered under snow - by resampling the line to 20 meters. 
+* ⚛ **\[API\] New API Endpoint Snow cover over line**: a new endpoint called[ Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) allows you passing a [GeoJSON formatted LineString geometry](https://en.wikipedia.org/wiki/GeoJSON#Geometries) to retrieve the snow cover status for each of the line's point. In addition, this endpoint will return the percentage of the terrain under such line that is covered under snow - by resampling the line to 20 meters. 
 
 ### Changes
 
