@@ -158,13 +158,15 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
 
 ### Step 3: Display the snow cover map layer
 
+{% hint style="info" %}
+The code examples here are using the DeFROST [European Alps Map](../defrost-maps/european-alps-map.md). Check the [Global Map section](../defrost-maps/global-map.md) if you are looking for coverage beyond this region.
+{% endhint %}
+
 To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
 
 {% hint style="warning" %}
 Make sure to modify the snippets below with your API access token. The Mapbox snippet requires, in addition, your Mapbox token.
 {% endhint %}
-
-The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples below.
 
 {% tabs %}
 {% tab title="OpenLayers" %}
@@ -410,6 +412,8 @@ The key point to keep in mind is that DeFROST Maps requires Bearer token Authent
 {% endcode-tabs %}
 {% endtab %}
 {% endtabs %}
+
+The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples below.
 
 ### Next steps
 

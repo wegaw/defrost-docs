@@ -27,5 +27,5 @@ To display the DeFROST Global snow cover map as a layer over the basemap of your
 https://maps.defrost.io/global/v1/{z}/{x}/{y}.png
 ```
 
-Pay attention to the fact that as any DeFROST endpoint, JWT Authentication is required for the Tile Server. This means **a valid JWT token has to be set in the HTTP Authorization request header**. Read more about Maps Authentication in the [Maps Overview section](overview.md#maps-authentication-json-web-tokens). 
+Pay attention to the fact that as any DeFROST endpoint, JWT Authentication is required for the Tile Server. This means **a valid JWT token has to be set in the HTTP Authorization request header**. Read more about Maps Authentication in the [Maps Overview section](maps-overview.md#maps-authentication-json-web-tokens). 
 
