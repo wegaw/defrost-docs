@@ -20,7 +20,7 @@ Read below for a step by step guide:
 
 ### Step 1: Obtain your API tokens
 
-To use DeFROST, you'll need an access token. We use this token to associate any of your requests to your account. Find your token or refresh it in your [Account Dashboard](https://dashboard.staging.defrost.ch) page or obtain it programmatically using the [Create Token API endpoint](https://staging.defrost.ch/api-docs#operation/Create%20token).
+To use DeFROST, you'll need an access token. We use this token to associate any of your requests to your account. Find your token or refresh it in your [Account Dashboard](https://dashboard.staging.defrost.io/) page or obtain it programmatically using the [Create Token API endpoint](https://staging.defrost.io/api-docs#operation/Create%20token).
 
 You will obtain two tokens:
 
@@ -31,7 +31,7 @@ You will obtain two tokens:
 To increase the security of your account, Access tokens **automatically expire** after 7 days, while Refresh tokens expire after 10 days. 
 {% endhint %}
 
-Due to automated expiration of both tokens, you need to implement your integration taking this aspect into account. An expired Access Token will return an HTTP response code `401 Unauthorized`, a signal for you to use the [Refresh Token API endpoint](https://staging.defrost.ch/api-docs#operation/Refresh%20token) to obtain a newly valid Access Token. If the Refresh Token is expired, obtain a new pair of tokens via the [Create Token API endpoint](https://staging.defrost.ch/api-docs#operation/Create%20token). 
+Due to automated expiration of both tokens, you need to implement your integration taking this aspect into account. An expired Access Token will return an HTTP response code `401 Unauthorized`, a signal for you to use the [Refresh Token API endpoint](https://staging.defrost.io/api-docs#operation/Refresh%20token) to obtain a newly valid Access Token. If the Refresh Token is expired, obtain a new pair of tokens via the [Create Token API endpoint](https://staging.defrost.io/api-docs#operation/Create%20token). 
 
 The tokens are standard [JSON Web Tokens](https://jwt.io/). Their payload contain the expiration date, which allows you to easily test whether a token is expired or not:
 
@@ -58,8 +58,8 @@ Make sure to modify the snippets with your API tokens obtained in the step above
 {% code-tabs-item title="defrost\_test.sh" %}
 ```bash
 # URLs used in this example
-export API_URL="http://api.staging.defrost.ch/v1/snow-covers/"
-export REFRESH_URL="http://api.staging.defrost.ch/v1/token/refresh/"
+export API_URL="http://api.staging.defrost.io/v1/snow-covers/"
+export REFRESH_URL="http://api.staging.defrost.io/v1/token/refresh/"
 # Your DeFROST API tokens
 export JWT_ACCESS_TOKEN="<YOUR_ACCESS_TOKEN>"
 export JWT_REFRESH_TOKEN="<YOUR_REFRESH_TOKEN>"
@@ -82,8 +82,8 @@ echo "DATA RECEIVED: $DATA"
 import requests
 
 # URLs used in this example
-SAMPLE_API_URL = 'http://api.staging.defrost.ch/v1/snow-covers/'
-TOKEN_REFRESH_URL = 'http://api.staging.defrost.ch/v1/token/refresh/'
+SAMPLE_API_URL = 'http://api.staging.defrost.io/v1/snow-covers/'
+TOKEN_REFRESH_URL = 'http://api.staging.defrost.io/v1/token/refresh/'
 # Your DeFROST API tokens
 JWT_ACCESS_TOKEN = '<YOUR_ACCESS_TOKEN>'
 JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>'
@@ -118,7 +118,7 @@ if r.status_code == 200:
 import axios from 'axios';
 
 // URLs used in this example
-let SAMPLE_API_URL = 'http://api.staging.defrost.ch/v1/snow-covers/';
+let SAMPLE_API_URL = 'http://api.staging.defrost.io/v1/snow-covers/';
 let TOKEN_REFRESH_URL = process.env.TOKEN_REFRESH_URL;
 // Your DeFROST API tokens
 let JWT_ACCESS_TOKEN = '<YOUR_ACCESS_TOKEN>';
@@ -196,7 +196,7 @@ The key point to keep in mind is that our Map Service requires Bearer token Auth
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.staging.defrost.ch/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'http://maps.staging.defrost.io/{z}/{x}/{y}.png';
         
         var map = new ol.Map({
             target: 'map',
@@ -222,7 +222,7 @@ The key point to keep in mind is that our Map Service requires Bearer token Auth
                             client.send();
                         },
                         crossOrigin: 'anonymous',
-                        attributions: 'Snow data &copy; <a href="https://www.defrost.ch/">WeGaw Ltd.</a>',
+                        attributions: 'Snow data &copy; <a href="https://www.defrost.io/">WeGaw Ltd.</a>',
                     }),
                     opacity: 0.3
                 })
@@ -270,7 +270,7 @@ The key point to keep in mind is that our Map Service requires Bearer token Auth
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.staging.defrost.ch/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'http://maps.staging.defrost.io/{z}/{x}/{y}.png';
         
         L.TileLayer.headers = L.TileLayer.extend({
             createTile(coords, done) {
@@ -324,7 +324,7 @@ The key point to keep in mind is that our Map Service requires Bearer token Auth
 
         // Notice 
         L.tileLayer.headers(defrost_maps_url, {
-            attribution: 'Snow data &copy; <a href="https://www.defrost.ch/">WeGaw Ltd.</a>',
+            attribution: 'Snow data &copy; <a href="https://www.defrost.io/">WeGaw Ltd.</a>',
             crossOrigin: 'anonymous',
             opacity: 0.3
         }).addTo(map);
@@ -366,7 +366,7 @@ The key point to keep in mind is that our Map Service requires Bearer token Auth
     <div id="map"></div>
     <script type="text/javascript">
         var token = '<YOUR_ACCESS_TOKEN>';
-        var defrost_maps_url = 'http://maps.staging.defrost.ch/{z}/{x}/{y}.png';
+        var defrost_maps_url = 'http://maps.staging.defrost.io/{z}/{x}/{y}.png';
         mapboxgl.accessToken = '<YOUR_MAPBOX_TOKEN>';
         
         var map = new mapboxgl.Map({
