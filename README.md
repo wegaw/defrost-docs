@@ -62,6 +62,6 @@ In this example, DeFROST returns a snow-positive reply for the Matterhorn summit
 The DeFROST API is a **RESTful API compliant with the OpenAPI 2.0** standard, so it can be integrated easily in your application.  As such you can use it in any environment connected to the world wide web using a TCP/IP library of your choice.  The **response data format is in the JSON format**, which is widely supported by all major programming languages and frameworks. That means you can integrate the API in most platforms including all major _**web browsers**, **Android**, **iOS**, **Python, C/C++, Node.js**_. You name it. 
 
 {% hint style="info" %}
-To get started in minutes with either the Map Service or the API, read the [Development Quickstart](introduction/development-quickstart.md).
+To get started in minutes with either DeFROST Maps or API, read the [Development Quickstart](introduction/development-quickstart.md).
 {% endhint %}
 
