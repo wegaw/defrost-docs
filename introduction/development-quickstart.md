@@ -35,14 +35,14 @@ Due to automated expiration of both tokens, you need to implement your integrati
 
 The tokens are standard [JSON Web Tokens](https://jwt.io/). Their payload contain the expiration date, which allows you to easily test whether a token is expired or not:
 
-{% code-tabs %}
-{% code-tabs-item title="check-refresh-token-expired.js" %}
+{% tabs %}
+{% tab title="check-refresh-token-expired.js" %}
 ```javascript
 var access_or_refresh_token = '<YOUR_ACCESS_OR_REFRESH_TOKEN>';
 return JWTDecode(access_or_refresh_token).exp < Date.now() / 1000;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Step 2: Make a test API Request
 
@@ -54,8 +54,6 @@ Make sure to modify the snippets with your API tokens obtained in the step above
 
 {% tabs %}
 {% tab title="curl" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost\_test.sh" %}
 ```bash
 # URLs used in this example
 export API_URL="https://api.defrost.io/v1/snow-covers/"
@@ -71,13 +69,9 @@ echo "Your new access token is $JWT_ACCESS_TOKEN"
 DATA=`curl --header "Authorization: Bearer $JWT_ACCESS_TOKEN" "$API_URL"`
 echo "DATA RECEIVED: $DATA"
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="Python" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost\_test.py" %}
 ```python
 import requests
 
@@ -102,13 +96,9 @@ if r.status_code == 200:
     data = r.json()
     print('Data retrieved', data)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="JavaScript" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost\_test.js" %}
 ```javascript
 // In this example we will use the axios package to make API requests
 // Make sure you import axios. In this example we do it with bundles.
@@ -151,8 +141,6 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
     return response.status;
 })();
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 {% endtabs %}
 
@@ -170,8 +158,6 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 {% tabs %}
 {% tab title="OpenLayers" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost-ol-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -239,13 +225,9 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="Leaflet" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost-leaflet-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -335,13 +317,9 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 
 {% tab title="Mapbox" %}
-{% code-tabs %}
-{% code-tabs-item title="defrost-mapbox-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -408,8 +386,6 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 {% endtab %}
 {% endtabs %}
 

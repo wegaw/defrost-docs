@@ -8,9 +8,19 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 * 🗺 **Smooth snow-covered area edges** in the maps ****for a neat look & feel 
 * ❄ **Global coverage for snow depth** real-time data
-* ☁ **Improved snow detection in extremely cloudy regions** while keeping the best resolution available! 
 * 💻 **Snow over an area** new API endpoint
 * 🤩 **Self-service signup page** to request access to DeFROST
+
+## v1.2.1 - 11 Nov 2019
+
+### New Features
+
+* 🗺 **\[Map\] Improved snow detection in extremely cloudy regions** while keeping the best resolution available for the [European Alps Map](../defrost-maps/european-alps-map.md). This improvement will soon be deployed for the global map.
+* 🌐 **\[General\] Public demo page available:** you can now navigate the latest global snow cover map on our [new demo page](https://defrost.io/demo) and leave your feedback! 
+
+### Bugfix
+
+* ⚛ **\[API\] Snow depth endpoint fixed**: After the global map inclusion in version 1.2, the snow depth endpoint started malfunctioning and reporting 0cm anywhere. This bug has been fixed in version 1.2.1. Thanks to our pilot users for reporting. 
 
 ## v1.2 - 1 Nov 2019
 
