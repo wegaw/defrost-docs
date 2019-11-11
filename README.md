@@ -10,7 +10,7 @@ You can integrate snow cover data from DeFROST in two main ways:
 
 The DeFROST Maps allow you to **display snow cover as a map** and integrates quickly with the most popular mobile & web mapping frameworks. Maps are delivered via the **Tiled Map Service** standard and allows you to customize the look and feel of the tiles on the fly. 
 
-![DeFROST Snow Cover layer displayed over a Mapbox base map](.gitbook/assets/assets_-lilbxlqv870ib7hjojr_-lmcelxri_gymglf3kfj_-lmch3eqlzcj1yxhvftm_image.png)
+![DeFROST Global Snow Map displayed as a layer \(purple\) on top of a Mapbox base map.](.gitbook/assets/image.png)
 
 You can read through our [quickstart](introduction/development-quickstart.md) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers**._
 

@@ -15,12 +15,15 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### New Features
 
-* 🗺 **\[Map\] Improved snow detection in extremely cloudy regions** while keeping the best resolution available for the [European Alps Map](../defrost-maps/european-alps-map.md). This improvement will soon be deployed for the global map.
 * 🌐 **\[General\] Public demo page available:** you can now navigate the latest global snow cover map on our [new demo page](https://defrost.io/demo) and leave your feedback! 
+
+### Improvements
+
+* 🗺 **\[Map\] Improved snow detection in extremely cloudy regions** while keeping the best resolution available for the [European Alps Map](../defrost-maps/european-alps-map.md). This improvement will soon be deployed for the global map.
 
 ### Bugfix
 
-* ⚛ **\[API\] Snow depth endpoint fixed**: After the global map inclusion in version 1.2, the snow depth endpoint started malfunctioning and reporting 0cm anywhere. This bug has been fixed in version 1.2.1. Thanks to our pilot users for reporting. 
+* ⚛ **\[API\] Snow depth endpoint fixed**: After the global map inclusion in version 1.2, the snow depth endpoint started malfunctioning and reporting 0cm anywhere. This bug has been fixed in version 1.2.1. Thanks to our pilot users for reporting.
 
 ## v1.2 - 1 Nov 2019
 
@@ -56,7 +59,7 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### Improvements
 
-* ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. Read the [Coming soon section](changelog.md#coming-soon) for our roadmap in reaching higher resolution for regions with persistent, long cloudy periods.
+* ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. [Improved in version 1.2.1](changelog.md#v-1-2-1-11-nov-2019).
 
 ## v1.0 - 25 Sept 2019
 
