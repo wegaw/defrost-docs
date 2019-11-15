@@ -9,7 +9,12 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 * 🗺 **Smooth snow-covered area edges** in the maps ****for a neat look & feel 
 * ❄ **Global coverage for snow depth** real-time data
 * 💻 **Snow over an area** new API endpoint
-* 🤩 **Self-service signup page** to request access to DeFROST
+
+## v1.2.2 - 15 Nov 2019
+
+### New Features
+
+* 🗺**\[Map\] Google Maps support:** you can now integrate the DeFROST Maps directly with Google Maps JavaScript API V3! Check [the documentation](../introduction/development-quickstart.md#google-maps-users-whitelist-your-http-referrers) and [code examples](https://github.com/wegaw/defrost-examples/blob/master/tests/map_tests/google-map.html) to get started.
 
 ## v1.2.1 - 11 Nov 2019
 
