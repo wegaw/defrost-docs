@@ -154,7 +154,11 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
 The code examples here are using the DeFROST [European Alps Map](../defrost-maps/european-alps-map.md). Check the [Global Map section](../defrost-maps/global-map.md) if you are looking for coverage beyond this region.
 {% endhint %}
 
-To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
+To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/), [Mapbox](https://www.mapbox.com/) and [Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial).
+
+#### Google Maps users: whitelist your HTTP referrers
+
+Using the DeFROST API, you can [**add as many HTTP referrers as you want to your whitelist**](https://defrost.io/api-docs#tag/Domain-whitelist) - exclusively allowing requests from such referrers to use your tokens and DeFROST services. This is an added security layer that, while recommended for all cases, it is only **mandatory for Google Maps users**. Since this library does not support sending your token in each tile request's authorization header, you need to send it via a query parameter - making your token exposed.
 
 {% hint style="warning" %}
 Make sure to modify the snippets below with your API access token. The Mapbox snippet requires, in addition, your Mapbox token, and the Google Maps one, your Google Maps API Key.
@@ -475,11 +479,7 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 {% endtab %}
 {% endtabs %}
 
-The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples above. 
-
-{% hint style="warning" %}
-**Google Maps JavaScript API relies on sending the token as a query parameter**, and therefore, we ask you to [whitelist your HTTP Referrer](https://defrost.io/api-docs#tag/Domain-whitelist) for added security.
-{% endhint %}
+The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples above. In the special case of Google Maps, you have no option but to send the token as a query parameter, which forces you to [add any HTTP Referrer to your whitelist](https://defrost.io/api-docs#tag/Domain-whitelist).
 
 ### Next steps
 
