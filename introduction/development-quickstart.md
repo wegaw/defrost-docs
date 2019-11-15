@@ -35,14 +35,12 @@ Due to automated expiration of both tokens, you need to implement your integrati
 
 The tokens are standard [JSON Web Tokens](https://jwt.io/). Their payload contain the expiration date, which allows you to easily test whether a token is expired or not:
 
-{% tabs %}
-{% tab title="check-refresh-token-expired.js" %}
+{% code title="check-refresh-token-expired.js" %}
 ```javascript
 var access_or_refresh_token = '<YOUR_ACCESS_OR_REFRESH_TOKEN>';
 return JWTDecode(access_or_refresh_token).exp < Date.now() / 1000;
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### Step 2: Make a test API Request
 
@@ -54,6 +52,7 @@ Make sure to modify the snippets with your API tokens obtained in the step above
 
 {% tabs %}
 {% tab title="curl" %}
+{% code title="defrost\_test.sh" %}
 ```bash
 # URLs used in this example
 export API_URL="https://api.defrost.io/v1/snow-covers/"
@@ -69,9 +68,11 @@ echo "Your new access token is $JWT_ACCESS_TOKEN"
 DATA=`curl --header "Authorization: Bearer $JWT_ACCESS_TOKEN" "$API_URL"`
 echo "DATA RECEIVED: $DATA"
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Python" %}
+{% code title="defrost\_test.py" %}
 ```python
 import requests
 
@@ -96,9 +97,11 @@ if r.status_code == 200:
     data = r.json()
     print('Data retrieved', data)
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="JavaScript" %}
+{% code title="defrost\_test.js" %}
 ```javascript
 // In this example we will use the axios package to make API requests
 // Make sure you import axios. In this example we do it with bundles.
@@ -141,6 +144,7 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
     return response.status;
 })();
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -150,7 +154,11 @@ let JWT_REFRESH_TOKEN = '<YOUR_REFRESH_TOKEN>';
 The code examples here are using the DeFROST [European Alps Map](../defrost-maps/european-alps-map.md). Check the [Global Map section](../defrost-maps/global-map.md) if you are looking for coverage beyond this region.
 {% endhint %}
 
-To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/).
+To test that your integration with DeFROST Maps is working correctly, use the examples below for your web mapping library of choice. We provide examples for the most popular web mapping libraries: [OpenLayers](http://openlayers.org), [Leaflet](https://leafletjs.com/), [Mapbox](https://www.mapbox.com/) and [Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial).
+
+#### Google Maps users: whitelist your HTTP referrers
+
+Using the DeFROST API, you can [**add as many HTTP referrers as you want to your whitelist**](https://defrost.io/api-docs#tag/Domain-whitelist) - exclusively allowing requests from such referrers to use your tokens and DeFROST services. This is an added security layer that, while recommended for all cases, it is only **mandatory for Google Maps users**. Since this library does not support sending your token in each tile request's authorization header, you need to send it via a query parameter - making your token exposed.
 
 {% hint style="warning" %}
 Make sure to modify the snippets below with your API access token. The Mapbox snippet requires, in addition, your Mapbox token.
@@ -158,6 +166,7 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 {% tabs %}
 {% tab title="OpenLayers" %}
+{% code title="defrost-ol-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -225,9 +234,11 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Leaflet" %}
+{% code title="defrost-leaflet-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -317,9 +328,11 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Mapbox" %}
+{% code title="defrost-mapbox-map.html" %}
 ```markup
 <!doctype html>
 <html lang="en">
@@ -386,10 +399,87 @@ Make sure to modify the snippets below with your API access token. The Mapbox sn
 
 </html>
 ```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Google Maps" %}
+{% code title="google-map.html" %}
+```markup
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        .map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <title>DeFROST Google Maps example</title>
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+        var token = '<YOUR_ACCESS_TOKEN>';
+        var defrost_maps_url = 'https://maps.defrost.io/{z}/{x}/{y}.png';
+
+        function initMap(){
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 46.0207, lng: 7.7491}, 
+                zoom: 12
+            });
+
+            // Name the layer anything you like.
+            var layerID = 'defrost_alps_snow';
+
+            // Attention: Google Maps JS API does not allow to set an Authorization header
+            // in each tile request. We are therefore forced to set the token as a query parameter.
+            // BEWARE: this has an increased security risk, as the token is exposed. This is why it is
+            // mandatory to whitelist the domains from which you will use it. 
+            // Check https://defrost.io/api-docs#tag/Domain-whitelist to learn how.
+            // Take into account that this demo will not work by simply opening the HTML file, since no
+            // "Referrer" header will be set in the requests in that way.
+            defrost_maps_url = defrost_maps_url + '?token=' + token;
+            // Create a new ImageMapType layer.
+            var layer = new google.maps.ImageMapType({
+                name: layerID,
+                getTileUrl: function(coord, zoom) {
+                    var url = defrost_maps_url
+                    .replace('{x}', coord.x)
+                    .replace('{y}', coord.y)
+                    .replace('{z}', zoom);
+                    return url;
+                },
+                tileSize: new google.maps.Size(256, 256),
+                minZoom: 1,
+                maxZoom: 20,
+                isPng: true,
+                opacity: 0.30
+            });
+
+            // Register the new layer, then activate it.
+            map.overlayMapTypes.push(layer);
+        }
+        
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<YOUR_GMAPS_API_KEY>&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
-The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples below.
+The key point to keep in mind is that DeFROST Maps requires Bearer token Authentication. This forces libraries displaying tile layers to **include the appropriate Authentication header in each tile request**. While Mapbox supports this method out of the box, OpenLayers and Leaflet require a minor workaround: have a look in the examples above. In the special case of Google Maps, you have no option but to send the token as a query parameter, which forces you to [add any HTTP Referrer to your whitelist](https://defrost.io/api-docs#tag/Domain-whitelist).
 
 ### Next steps
 
