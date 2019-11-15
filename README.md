@@ -10,9 +10,9 @@ You can integrate snow cover data from DeFROST in two main ways:
 
 The DeFROST Maps allow you to **display snow cover as a map** and integrates quickly with the most popular mobile & web mapping frameworks. Maps are delivered via the **Tiled Map Service** standard and allows you to customize the look and feel of the tiles on the fly. 
 
-![DeFROST European Alps Map showing snow cover in light blue color, displayed over a Mapbox base map](.gitbook/assets/image.png)
+![DeFROST Global Snow Map displayed as a layer \(purple\) on top of a Mapbox base map.](.gitbook/assets/image.png)
 
-You can read through our [quickstart](introduction/defrost-api-and-map-service.md#step-3-display-the-snow-cover-map-layer) to get started with _**Leaflet**, **Mapbox**, **and OpenLayers.**_ Check the [DeFROST Maps section](defrost-maps/overview.md) for an in-depth introduction to the two different snow cover maps offered: the [European Alps](defrost-maps/european-alps-map.md) map or the [Global](defrost-maps/global-map.md) map.
+You can read through our [quickstart](introduction/defrost-api-and-map-service.md#step-3-display-the-snow-cover-map-layer) to get started with **Leaflet, Mapbox, OpenLayers and Google Maps.** Check the [DeFROST Maps section](defrost-maps/overview.md) for an in-depth introduction to the two different snow cover maps offered: the [European Alps](defrost-maps/european-alps-map.md) map or the [Global](defrost-maps/global-map.md) map.
 
 ### DeFROST API
 
