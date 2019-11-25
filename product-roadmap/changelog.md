@@ -10,6 +10,13 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 * ❄ **Global coverage for snow depth** real-time data
 * 💻 **Snow over an area** new API endpoint
 
+## v1.2.3 - 22 Nov 2019
+
+### Improvements
+
+* 🗺**\[Map\] Tiles load 41% faster:** we have deployed a few fixes in orur servers to be able to manage more map tile requests in parallel, so that we can serve maps 41% faster, in average, than before.
+* ⚛ **\[API\] Snow depth resolution improved**: for the Swiss Alps, you now get snow depth estimations that are closer to the real world's depth thanks to improved resolution in our models.
+
 ## v1.2.2 - 15 Nov 2019
 
 ### New Features
