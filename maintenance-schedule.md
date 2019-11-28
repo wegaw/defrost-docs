@@ -18,11 +18,11 @@ In order to offer you the best service we need some housekeeping every now and a
 
 ### Hotfixing window
 
-**Daily** between **6pm** and **6:30pm** CET.
+**Daily** between **12pm** and **12:30pm** CET.
 
 ### One-timers 
 
 Here you can find specific, one-time maintenance windows that we announce in advance, for exceptional cases which require quick incident resolution:
 
-* Tuesday,  26/November/2019 --  **12am** to **1:45pm** CET
+* Tuesday,  26/November/2019 --  **12pm** to **1:45pm** CET
 
