@@ -6,9 +6,24 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ## Coming soon
 
-* 🗺 **Smooth snow-covered area edges** in the maps ****for a neat look & feel 
-* ❄ **Global coverage for snow depth** real-time data
+* ❄ **Global coverage for fresh, acummulated snow depth** for the last and the next 24 hours.
 * 💻 **Snow over an area** new API endpoint
+
+## v1.3 - 19 Dec 2019
+
+### New Features
+
+* 🗺**\[Map\] Global Snow Depth map available:** we are really excited to release a daily, global-coverage snow depth map! Check [the documentation](https://docs.defrost.io/defrost-maps/global-map) to learn more about it.
+
+### Changes
+
+* 🗺**\[Map\] The Global Map is now coloured to represent snow depth:** the [global tiled map endpoint URL](https://docs.defrost.io/defrost-maps/global-map#map-endpoint) now returns a map layer which shows the snow depth globally in different shades from light blue to bright purple.
+* 🗺**\[Map\] Smooth snow-covered area edges:** the [global map](https://docs.defrost.io/defrost-maps/global-map) has now a neater look & feel thanks to an improved data post-processing which softens the snowy area edges.
+* ⚛ **\[API\] The Snow depth metric has now global coverage:** for any point between latitudes 66.5° north and 66.5° south, the [snow cover API endpoints](https://defrost.io/api-docs#tag/Snow-cover) are now able to include the actual snow depth at that point.
+
+### Improvements
+
+* ⚛ **\[API\] Snow cover over line API endpoint loads 20x faster:** thanks to this speed improvement, you can compute [snow metrics over any trail or path](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) and get a response 20 times faster than before while getting the same precission level.
 
 ## v1.2.3 - 22 Nov 2019
 

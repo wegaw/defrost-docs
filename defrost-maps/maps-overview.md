@@ -4,7 +4,7 @@ description: Integrate snow maps in your web mapping application
 
 # Maps Overview
 
-DeFROST currently offers **two different snow cover maps**: one covering the [European Alps](european-alps-map.md), the other one covering [the entire globe](global-map.md). 
+DeFROST currently offers **two different snow maps**: one covering the [European Alps](european-alps-map.md) displaying the snow extent, the other one covering [the entire globe](global-map.md) and displaying the snow depth.
 
 The table below quickly summarizes both maps' main characteristics:
 
@@ -14,7 +14,7 @@ The table below quickly summarizes both maps' main characteristics:
 | **Update time** | Daily at 3AM CET | Daily at 4PM CET |
 | **Tile zoom levels** | 13 zoom levels | 9 zoom levels |
 | **Tile size** | 256x256 pixels | 256x256 pixels |
-| **Default snow color** | Purple \(\#5350b2\) | Purple \(\#5350b2\) |
+| **Default snow color** | Purple \(\#5350b2\) | Light blue \(\#35e9e6\) to Bright pink \(\#ff01fb\) |
 | **Covered area** | Alpine Convention | 66.5°N to 66.5°S |
 
 Both maps are **served via their own** [**Tile Map Service**](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames) **\(TMS\) based XYZ tiles endpoint**, making it easy to display it as a layer on top of a basemap of choice, with any of the major web mapping libraries available today such as OpenLayers, Leaflet or Mapbox. 

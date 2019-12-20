@@ -4,19 +4,19 @@ description: Get a glimpse of how to integrate DeFROST in your website or mobile
 
 # DeFROST Overview
 
-You can integrate snow cover data from DeFROST in two main ways:
+You can integrate snow data from DeFROST in two main ways:
 
 ### DeFROST Maps
 
-The DeFROST Maps allow you to **display snow cover as a map** and integrates quickly with the most popular mobile & web mapping frameworks. Maps are delivered via the **Tiled Map Service** standard and allows you to customize the look and feel of the tiles on the fly. 
+The DeFROST Maps allow you to **display snow cover and depth as a map** and integrates quickly with the most popular mobile & web mapping frameworks. Maps are delivered via the **Tiled Map Service** standard and allows you to customize the look and feel of the tiles on the fly. 
 
-![DeFROST Global Snow Map displayed as a layer \(purple\) on top of a Mapbox base map.](.gitbook/assets/image.png)
+![DeFROST Global Snow Map near Vancouver, depicting snow depth on 20th December 2019.](.gitbook/assets/vancouver-20.12.2019.png)
 
-You can read through our [quickstart](introduction/development-quickstart.md) to get started with **Leaflet**, **Mapbox**, **OpenLayers and Google Maps**_._ Check the [DeFROST Maps section](./#defrost-maps) for an in-depth introduction to the two different snow cover maps offered: the [European Alps map](defrost-maps/european-alps-map.md) or the [Global map](defrost-maps/global-map.md).
+You can read through our [quickstart](introduction/development-quickstart.md) to get started with **Leaflet**, **Mapbox**, **OpenLayers and Google Maps**_._ Check the [DeFROST Maps section](./#defrost-maps) for an in-depth introduction to the two different snow maps offered: the [European Alps map](defrost-maps/european-alps-map.md) or the [Global map](defrost-maps/global-map.md).
 
 ### DeFROST API
 
-Do you want to power a custom, more advanced use case? [DeFROST API](https://defrost.io/api-docs) lets you **query snow cover for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
+Do you want to power a custom, more advanced use case? [DeFROST API](https://defrost.io/api-docs) lets you **query snow data for a point, along a path or over an area programmatically**. Check below for a quick example on a query to find out whether or not there is snow at the top of the Matterhorn:
 
 {% api-method method="get" host="https://api.defrost.io" path="/v1/snow-point/{lat}/{lng}" %}
 {% api-method-summary %}
@@ -51,6 +51,7 @@ In this example, DeFROST returns a snow-positive reply for the Matterhorn summit
     "lat": 45.9766,
     "lng": 7.6585, 
     "snow": true,
+    "depth": 1,
     "date": "2019-08-19T12:15:00Z",
 }
 ```
