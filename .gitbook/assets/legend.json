@@ -1,0 +1,163 @@
+[
+  {
+		"model": "legendentry",
+		"fields": {
+			"expression": "(0 < x) & (x <= 3)",
+			"color": "#35e9e6"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(3 < x) & (x <= 5)",
+			"color": "#57e6ed"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(5 < x) & (x <= 10)",
+			"color": "#57d9ed"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(10 < x) & (x <= 18)",
+			"color": "#57d2ed"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(18 < x) & (x <= 25)",
+			"color": "#37b4f3"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(25 < x) & (x <= 32)",
+			"color": "#1baaf2"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(32 < x) & (x <= 40)",
+			"color": "#19abf4"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(40 < x) & (x <= 46)",
+			"color": "#3f89ff"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(46 < x) & (x <= 52)",
+			"color": "#3e83f2"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(52 < x) & (x <= 63)",
+			"color": "#3179f4"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(63 < x) & (x <= 74)",
+			"color": "#2d6edd"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(74 < x) & (x <= 85)",
+			"color": "#2d39dd"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(85 < x) & (x <= 95)",
+			"color": "#3b29d8"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(95 < x) & (x <= 100)",
+			"color": "#5529d8"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(100 < x) & (x <= 120)",
+			"color": "#6929d8"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(120 < x) & (x <= 130)",
+			"color": "#7b29d8"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(130 < x) & (x <= 145)",
+			"color": "#8729d8"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(145 < x) & (x <= 160)",
+			"color": "#9e23e5"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(160 < x) & (x <= 175)",
+			"color": "#b123e5"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(175 < x) & (x <= 185)",
+			"color": "#b823e5"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(185 < x) & (x <= 195)",
+			"color": "#b913e2"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "(195 < x) & (x <= 252)",
+			"color": "#d513e2"
+		}
+	},
+	{
+		"model": "legendentry",
+		"fields": {
+			"expression": "253",
+			"color": "#ff01fb"
+		}
+	}
+]

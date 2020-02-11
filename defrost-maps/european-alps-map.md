@@ -18,18 +18,52 @@ If you make any request for a tile outside the above covered area, the DeFROST s
 
 The table below summarizes this map's key characteristics: 
 
-| **Map Characteristics** |  |
-| :--- | :--- |
-| **Spatial resolution** | 20 meters |
-| **Update time** | Daily at 3AM CET |
-| **Tile zoom levels** | 13 zoom levels |
-| **Tile size** | 256x256 pixels |
-| **Default snow color** | Purple \(\#5350b2\) |
-| **Covered area** | Alpine Convention |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Map Characteristics</b>
+      </th>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>Spatial resolution</b>
+      </td>
+      <td style="text-align:left">20 meters</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Update time</b>
+      </td>
+      <td style="text-align:left">Daily at 3AM CET</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Tile zoom levels</b>
+      </td>
+      <td style="text-align:left">13 zoom levels</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Tile size</b>
+      </td>
+      <td style="text-align:left">256x256 pixels</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Default coloring</b>
+      </td>
+      <td style="text-align:left">
+        <p>From light blue (#35e9e6) to bright pink (#ff01fb)</p>
+        <p>The coloring spreads from 1cm to 2.5m+</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Covered area</b>
+      </td>
+      <td style="text-align:left">Alpine Convention</td>
+    </tr>
+  </tbody>
+</table>### Map Endpoint
 
-### Map Endpoint
-
-To display the DeFROST European Alps snow cover map as a layer over the basemap of your choice, use the URL string below as the Tile Server endpoint:
+To display the DeFROST European Alps snow cover map as a layer over the base map of your choice, use the URL string below as the Tile Server endpoint:
 
 ```http
 https://maps.defrost.io/{z}/{x}/{y}.png

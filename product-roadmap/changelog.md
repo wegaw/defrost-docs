@@ -6,8 +6,21 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ## Coming soon
 
-* ❄ **Global coverage for fresh, acummulated snow depth** for the last and the next 24 hours.
-* 💻 **Snow over an area** new API endpoint
+* \*\*\*\*🎯 **High resolution snow tiles for custom** areas of interest upon demand.
+
+## v1.4 - 13 Feb 2020
+
+### New Features
+
+* 🗺**\[Map\] Snow Depth color legend available:** developers have an image and a JSON definition so that their users can interpret the snow depth displayed on the map . Check[ the documentation](../defrost-maps/maps-overview.md#map-legend) to learn more about it.
+
+### Changes
+
+* 🗺**\[Map\] The Alpine Map is now colored to represent snow depth:** the [alpine map endpoint URL](https://docs.defrost.io/defrost-maps/european-alps-map#map-endpoint) now returns a map layer that shows the snow depth in the Alps in different shades from light blue to bright purple.
+
+### Improvements
+
+* 🗺**\[Map\] The Global Map looks have improved:** the [global tiled map endpoint URL](https://docs.defrost.io/defrost-maps/global-map#map-endpoint) now returns a map layer with smoother edges in areas where snow data is scarcer.
 
 ## v1.3 - 19 Dec 2019
 
@@ -17,19 +30,19 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### Changes
 
-* 🗺**\[Map\] The Global Map is now coloured to represent snow depth:** the [global tiled map endpoint URL](https://docs.defrost.io/defrost-maps/global-map#map-endpoint) now returns a map layer which shows the snow depth globally in different shades from light blue to bright purple.
+* 🗺 the [global tiled map endpoint URL](https://docs.defrost.io/defrost-maps/global-map#map-endpoint) now returns a map layer which shows the snow depth globally in different shades from light blue to bright purple.
 * 🗺**\[Map\] Smooth snow-covered area edges:** the [global map](https://docs.defrost.io/defrost-maps/global-map) has now a neater look & feel thanks to an improved data post-processing which softens the snowy area edges.
 * ⚛ **\[API\] The Snow depth metric has now global coverage:** for any point between latitudes 66.5° north and 66.5° south, the [snow cover API endpoints](https://defrost.io/api-docs#tag/Snow-cover) are now able to include the actual snow depth at that point.
 
 ### Improvements
 
-* ⚛ **\[API\] Snow cover over line API endpoint loads 20x faster:** thanks to this speed improvement, you can compute [snow metrics over any trail or path](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) and get a response 20 times faster than before while getting the same precission level.
+* ⚛ **\[API\] Snow cover over line API endpoint loads 20x faster:** thanks to this speed improvement, you can compute [snow metrics over any trail or path](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) and get a response 20 times faster than before while getting the same precision level.
 
 ## v1.2.3 - 22 Nov 2019
 
 ### Improvements
 
-* 🗺**\[Map\] Tiles load 41% faster:** we have deployed a few fixes in orur servers to be able to manage more map tile requests in parallel, so that we can serve maps 41% faster, in average, than before.
+* 🗺**\[Map\] Tiles load 41% faster:** we have deployed a few fixes in our servers to be able to manage more map tile requests in parallel, so that we can serve maps 41% faster, in average, than before.
 * ⚛ **\[API\] Snow depth resolution improved**: for the Swiss Alps, you now get snow depth estimations that are closer to the real world's depth thanks to improved resolution in our models.
 
 ## v1.2.2 - 15 Nov 2019
@@ -57,7 +70,7 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 ### New Features
 
 * 🗺 **\[Map\]** [**DeFROST Global Snow Cover Map**](../defrost-maps/global-map.md) **at 375 meters resolution:** [new Map endpoint](../defrost-maps/global-map.md#map-endpoint) offering a fresh daily map on snow coverage between the 70°N and 70°S parallels. 
-* ⚛ **\[API\] DeFROST Global Snow Cover at 375 meters resolution:** now allows for Snow cover at point and over-line queries anywhere between the 70°N and 70°S parallels. 
+* \*\*\*\*⚛ **\[API\] DeFROST Global Snow Cover at 375 meters resolution:** now allows for Snow cover at point and over-line queries anywhere between the 70°N and 70°S parallels. 
 
 ### Changes
 
@@ -65,19 +78,19 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### Improvements
 
-* 📘 **\[Documentation\]** **New DeFROST Maps section**: this section presents and describes the characteristics of both maps operated by DeFROST, this is, the European Alps Map and the Global Map. In addition, it will help you out in setting up your snow cover map! Read more at [Maps Overview](../defrost-maps/maps-overview.md).
+* \*\*\*\*📘 **\[Documentation\]** **New DeFROST Maps section**: this section presents and describes the characteristics of both maps operated by DeFROST, this is, the European Alps Map and the Global Map. In addition, it will help you out in setting up your snow cover map! Read more at [Maps Overview](../defrost-maps/maps-overview.md).
 
 ## v1.1.1 - 16 Oct 2019
 
 ### New Features
 
-* ⚛ **\[API\] The "Snow cover over a line" endpoint returns 2 new metrics**: the minimum and maximum snow depth observed across the points that compose the line you are querying snow for are now returned by the [Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) API endpoint.
+* \*\*\*\*⚛ **\[API\] The "Snow cover over a line" endpoint returns 2 new metrics**: the minimum and maximum snow depth observed across the points that compose the line you are querying snow for are now returned by the [Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) API endpoint.
 
 ## v1.1 - 11 Oct 2019
 
 ### New Features
 
-* ⚛ **\[API\] New API Endpoint Snow cover over line**: a new endpoint called[ Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) allows you passing a [GeoJSON formatted LineString geometry](https://en.wikipedia.org/wiki/GeoJSON#Geometries) to retrieve the snow cover status for each of the line's point. In addition, this endpoint will return the percentage of the terrain under such line that is covered under snow - by resampling the line to 20 meters. 
+* \*\*\*\*⚛ **\[API\] New API Endpoint Snow cover over line**: a new endpoint called[ Snow cover over line](https://defrost.io/api-docs#operation/Snow%20cover%20over%20line) allows you passing a [GeoJSON formatted LineString geometry](https://en.wikipedia.org/wiki/GeoJSON#Geometries) to retrieve the snow cover status for each of the line's point. In addition, this endpoint will return the percentage of the terrain under such line that is covered under snow - by resampling the line to 20 meters. 
 
 ### Changes
 
@@ -86,12 +99,12 @@ description: "Be sure to not miss out on new features and improvements! \U0001F6
 
 ### Improvements
 
-* ☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. [Improved in version 1.2.1](changelog.md#v-1-2-1-11-nov-2019).
+* \*\*\*\*☁ **\[Data\]** **Snow cover detection during cloudy periods**: the map will now use the best data available either at 20 or 500 meters resolution to map the snow cover during periods of consistent cloudy conditions over any region. This means that for areas under such conditions, resolution might start dropping down up to 500m while still managing to detect snow. Therefore the perceived "pixel size" on the snow cover map may appear to increase. [Improved in version 1.2.1](changelog.md#v-1-2-1-11-nov-2019).
 
 ## v1.0 - 25 Sept 2019
 
 **DeFROST 1.0 codename ALPINE20 first release!** This is basically including, with coverage for all the European Alpine region \(as per the area defined by the Alpine Convention\):
 
-* ⚛ **DeFROST API**: an endpoint for querying snow cover at any point in the alps. Another endpoint for querying the snow depth for any point.
-* 🗺 **DeFROST Maps**: a TMS standard web map tile server secured by JWT tokens providing DeFROST snow cover map compatible with any major web mapping library such as OpenLayers, Leaflet or Mapbox.
+* \*\*\*\*⚛ **DeFROST API**: an endpoint for querying snow cover at any point in the alps. Another endpoint for querying the snow depth for any point.
+* \*\*\*\*🗺 **DeFROST Maps**: a TMS standard web map tile server secured by JWT tokens providing DeFROST snow cover map compatible with any major web mapping library such as OpenLayers, Leaflet or Mapbox.
 
