@@ -16,5 +16,8 @@
 ## Product Roadmap
 
 * [Changelog](product-roadmap/changelog.md)
-* [Maintenance Schedule](maintenance-schedule.md)
+* [Maintenance Schedule](product-roadmap/maintenance-schedule.md)
+* [Sources & References](sources-and-references.md)
+* [Privacy Policy](https://www.iubenda.com/privacy-policy/53928391)
+* [Terms of Use](https://www.iubenda.com/terms-and-conditions/53928391)
 
